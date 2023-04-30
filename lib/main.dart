@@ -23,6 +23,7 @@ void main() {
         ChangeNotifierProvider(create: (context) => SettingProvider(),),
         ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
       ],
+
       child:
         Platform.isIOS != true ?
           MaterialApp(
