@@ -9,6 +9,7 @@ import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 
+
 void main() {
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
