@@ -61,8 +61,11 @@ class _Apps_ForyouState extends State<Apps_Foryou> {
                   itemBuilder: (context, index) {
                     return InkWell(
                       onTap: () {
-                        gpF!.totalphoto(index);
-                        Navigator.pushNamed(context, "itemview",arguments: index);
+                        //gpF!.totalphoto(index);
+                        //Navigator.pushNamed(context, "itemview",arguments: index);
+
+                        Navigator.pushNamed(context, "itemview");
+
                       },
                       child: AppTile(
                         appname: gpT!.googleitems[index].appname,

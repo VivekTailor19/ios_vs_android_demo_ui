@@ -33,7 +33,7 @@ void main() {
 
         MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: "appview",
+          initialRoute: "googleplay",
           routes: {
               "ios_setting": (context) => iOS_Setting_UI(),
               "android_setting":(context) => Android_Settings(),

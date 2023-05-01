@@ -22,7 +22,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
     gpF = Provider.of<GooglePlayProvider>(context,listen: false);
     gpT = Provider.of<GooglePlayProvider>(context,listen: true);
 
-    int i = ModalRoute.of(context)!.settings.arguments as int;
+    //int i = ModalRoute.of(context)!.settings.arguments as int;
 
     return SafeArea(
       child: Scaffold(
@@ -152,23 +152,85 @@ class _App_View_AndroidState extends State<App_View_Android> {
                       ,),),
                 ),
                 Container(height: 150,
-                  child: ListView.builder(itemBuilder: (context, index) {
-                    return Padding(
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: Container(height: 120,width: 100,
                         decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
                           color: Colors.red,
-                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[i].imgpack![index]}"),fit: BoxFit.fill ),
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![0]}"),fit: BoxFit.fill ),
                         ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![1]}"),fit: BoxFit.fill ),
                         ),
-                    );
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![2]}"),fit: BoxFit.fill ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![3]}"),fit: BoxFit.fill ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![4]}"),fit: BoxFit.fill ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[0].imgpack![5]}"),fit: BoxFit.fill ),
+                        ),
+                      ),
+                    ),
+                  ],
 
 
-                  },scrollDirection: Axis.horizontal,
-                    itemCount: gpT!.imgpacklength,
-
-                  ),
-                ),
+                ),),
+                // Container(height: 150,
+                //   child: ListView.builder(itemBuilder: (context, index) {
+                //     return Padding(
+                //       padding: const EdgeInsets.symmetric(horizontal: 8),
+                //       child: Container(height: 120,width: 100,
+                //         decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                //           color: Colors.red,
+                //           image: DecorationImage(image: NetworkImage("${gpF!.googleitems[i].imgpack![index]}"),fit: BoxFit.fill ),
+                //         ),
+                //         ),
+                //     );
+                //
+                //
+                //   },scrollDirection: Axis.horizontal,
+                //     itemCount: gpT!.imgpacklength,
+                //
+                //   ),
+                // ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("About this game", style: TextStyle(
