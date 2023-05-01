@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ios_vs_android_demo_ui/google_play_store_ui/provider/google_play_provider.dart';
+import 'package:provider/provider.dart';
 
 class App_View_Android extends StatefulWidget {
   const App_View_Android({Key? key}) : super(key: key);
@@ -8,9 +10,20 @@ class App_View_Android extends StatefulWidget {
 }
 
 class _App_View_AndroidState extends State<App_View_Android> {
+
+  GooglePlayProvider? gpF;
+  GooglePlayProvider? gpT;
+
+
+
   @override
   Widget build(BuildContext context) {
-    // int index = ModalRoute.of(context)!.settings.arguments as int;
+
+    gpF = Provider.of<GooglePlayProvider>(context,listen: false);
+    gpT = Provider.of<GooglePlayProvider>(context,listen: true);
+
+    int i = ModalRoute.of(context)!.settings.arguments as int;
+
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -82,10 +95,10 @@ class _App_View_AndroidState extends State<App_View_Android> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text("4.4 *",
-                            style: TextStyle(fontSize: 13, fontWeight: FontWeight
+                          Text("4.4 ⭐",
+                            style: TextStyle(fontSize: 14, fontWeight: FontWeight
                                 .bold),),
-                          Text("3Cr reviews ⓘ", style: TextStyle(fontSize: 10),)
+                          Text("3Cr reviews ⓘ", style: TextStyle(fontSize: 10.5),)
                         ],
                       ),
                       VerticalOwnBar(),
@@ -103,9 +116,9 @@ class _App_View_AndroidState extends State<App_View_Android> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text("100Cr+",
-                            style: TextStyle(fontSize: 13, fontWeight: FontWeight
+                            style: TextStyle(fontSize: 14, fontWeight: FontWeight
                                 .bold),),
-                          Text("Downloads", style: TextStyle(fontSize: 10),)
+                          Text("Downloads", style: TextStyle(fontSize: 10.5),)
                         ],
                       ),
                       VerticalOwnBar(),
@@ -114,9 +127,9 @@ class _App_View_AndroidState extends State<App_View_Android> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text("4.4 *",
-                            style: TextStyle(fontSize: 13, fontWeight: FontWeight
+                            style: TextStyle(fontSize: 14, fontWeight: FontWeight
                                 .bold),),
-                          Text("3Cr reviews ⓘ", style: TextStyle(fontSize: 10),)
+                          Text("3Cr reviews ⓘ", style: TextStyle(fontSize: 10.5),)
                         ],
                       ),
                     ],
@@ -138,10 +151,28 @@ class _App_View_AndroidState extends State<App_View_Android> {
 
                       ,),),
                 ),
+                Container(height: 150,
+                  child: ListView.builder(itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(height: 120,width: 100,
+                        decoration: BoxDecoration(borderRadius:BorderRadius.circular(15),
+                          color: Colors.red,
+                          image: DecorationImage(image: NetworkImage("${gpF!.googleitems[i].imgpack![index]}"),fit: BoxFit.fill ),
+                        ),
+                        ),
+                    );
+
+
+                  },scrollDirection: Axis.horizontal,
+                    itemCount: gpT!.imgpacklength,
+
+                  ),
+                ),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("About this game", style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 15),),
+                        fontSize: 21),),
                     Icon(Icons.arrow_forward)
 
 
@@ -149,7 +180,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Data safety", style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 15),),
+                         fontSize: 21),),
                     Icon(Icons.arrow_forward)
 
 
@@ -165,7 +196,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Container(
-                    height: 250,
+                    height: 300,
                     alignment: Alignment.center,
 
                     decoration: BoxDecoration(
@@ -204,7 +235,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Ratings and reviews", style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 15),),
+                        fontSize: 21),),
                     Icon(Icons.arrow_forward)
 
 

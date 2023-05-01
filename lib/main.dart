@@ -22,47 +22,51 @@ void main() {
 
   runApp(
 
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) =>MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => SettingProvider(),),
-        ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
-      ],
+    MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => SettingProvider(),),
+      ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
+    ],
 
-      child:
-       // Platform.isIOS != true ?
+    child:
+     // Platform.isIOS != true ?
 
-          MaterialApp(
-            debugShowCheckedModeBanner: false,
-            initialRoute: "appview",
-            routes: {
-                "ios_setting": (context) => iOS_Setting_UI(),
-                "android_setting":(context) => Android_Settings(),
-                "googleplay":(context) => First_Screen(),
-                "appview":(context) => App_View_Android(),
+        MaterialApp(
+          debugShowCheckedModeBanner: false,
+          initialRoute: "appview",
+          routes: {
+              "ios_setting": (context) => iOS_Setting_UI(),
+              "android_setting":(context) => Android_Settings(),
+              "googleplay":(context) => First_Screen(),
+              "appview":(context) => App_View_Android(),
 
-              },
-          )
+            },
+        )
 
-            //:
+          //:
 
-          // CupertinoApp(
-          //   debugShowCheckedModeBanner: false,
-          //   initialRoute: "ios_setting",
-          //   routes: {
-          //     "ios_setting": (context) => iOS_Setting_UI(),
-          //   },
-          // ),
+        // CupertinoApp(
+        //   debugShowCheckedModeBanner: false,
+        //   initialRoute: "ios_setting",
+        //   routes: {
+        //     "ios_setting": (context) => iOS_Setting_UI(),
+        //   },
+        // ),
 
     ),
-  ),
 
 
 
   );
 
 }
+
+/*
+Application
+-Name,Images,logo,rating,
+
+
+* */
 
 /*
 

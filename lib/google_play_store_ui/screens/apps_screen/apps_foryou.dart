@@ -59,10 +59,16 @@ class _Apps_ForyouState extends State<Apps_Foryou> {
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    return AppTile(
-                      appname: gpT!.googleitems[index].appname,
-                      apprating: gpT!.googleitems[index].apprating,
-                      appimage: gpT!.googleitems[index].appimage,
+                    return InkWell(
+                      onTap: () {
+                        gpF!.totalphoto(index);
+                        Navigator.pushNamed(context, "itemview",arguments: index);
+                      },
+                      child: AppTile(
+                        appname: gpT!.googleitems[index].appname,
+                        apprating: gpT!.googleitems[index].apprating,
+                        appimage: gpT!.googleitems[index].appimage,
+                      ),
                     );
 
                   },
