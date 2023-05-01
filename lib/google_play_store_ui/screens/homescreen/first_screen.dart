@@ -40,7 +40,7 @@ class _First_ScreenState extends State<First_Screen> {
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.black54,
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.videogame_asset_rounded),label: "Games"),
+            BottomNavigationBarItem(icon: Icon(Icons.sports_esports_rounded),label: "Games"),
             BottomNavigationBarItem(icon: Icon(Icons.grid_view),label: "Apps"),
             BottomNavigationBarItem(icon: Icon(Icons.local_offer_outlined),label: "Offers"),
             BottomNavigationBarItem(icon: Icon(Icons.book_rounded),label: "Books"),

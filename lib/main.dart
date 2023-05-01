@@ -9,6 +9,8 @@ import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 
+import 'google_play_store_ui/screens/app_view.dart';
+
 
 void main() {
 
@@ -28,11 +30,12 @@ void main() {
         Platform.isIOS != true ?
           MaterialApp(
             debugShowCheckedModeBanner: false,
-            initialRoute: "googleplay",
+            initialRoute: "appview",
             routes: {
                 "ios_setting": (context) => iOS_Setting_UI(),
                 "android_setting":(context) => Android_Settings(),
                 "googleplay":(context) => First_Screen(),
+                "appview":(context) => App_View_Android(),
 
               },
           ) :
