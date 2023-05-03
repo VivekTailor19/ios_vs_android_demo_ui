@@ -1,7 +1,8 @@
 class CupertinoModel
 {
   String? name, image;
-  int? price,qty;
+  double? price;
+  int? qty;
 
   CupertinoModel({this.name, this.image, this.price,this.qty});
 }

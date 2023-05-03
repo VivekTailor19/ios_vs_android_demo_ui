@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:provider/provider.dart';
 
 import '../shopping_provider/shopping_provider.dart';
@@ -14,10 +15,9 @@ class Cupertino_Products extends StatefulWidget {
 }
 
 class _Cupertino_ProductsState extends State<Cupertino_Products> {
+
   CupertinoProvider? cpT;
   CupertinoProvider? cpF;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,11 @@ class _Cupertino_ProductsState extends State<Cupertino_Products> {
                               Text("${cpT!.productlist[index].price}", style: TextStyle(fontSize: 25, color: CupertinoColors.systemGrey2),),
                             ],),
                           Spacer(),
-                          Icon(CupertinoIcons.add_circled)
+                          CupertinoButton(
+                            child: Icon(CupertinoIcons.add_circled),
+                            onPressed: () {
+                            cpF!.addcart(index);
+                          },)
 
 
                         ],

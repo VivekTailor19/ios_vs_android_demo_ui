@@ -26,6 +26,30 @@ class CupertinoProvider extends ChangeNotifier
 
   ];
 
+  List<CupertinoModel> cartlist = [];
+
+  double cartheight = 75;
+  double totalcart = 0;
+
+
+  void addcart(int index)
+  {
+
+
+
+    cartheight = (cartlist.length +1 ) * 75;
+    CupertinoModel temp = productlist[index];
+    cartlist.add(temp);
+    cartheight = (cartlist.length +1 ) * 75;
+    for(int i = 0 ; i< cartlist.length; i++)
+    {
+      totalcart = totalcart + cartlist[i].price! ;
+    }
+
+    notifyListeners();
+  }
+
+
 
 
 }
