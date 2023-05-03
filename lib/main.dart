@@ -51,9 +51,10 @@ void main() {
 
               CupertinoApp(
                 debugShowCheckedModeBanner: false,
-                initialRoute: "ios_setting",
+                initialRoute: "cupertinostore",
                 routes: {
                   "/":(context) => iOS_Home(),
+                  "home":(context) => iOS_Home(),
                   "ios_setting": (context) => iOS_Setting_UI(),
                   "cupertinostore":(context) => Cupertino_Store(),
 

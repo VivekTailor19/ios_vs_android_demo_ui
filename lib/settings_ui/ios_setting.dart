@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+
+
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 
@@ -29,7 +31,9 @@ class _iOS_Setting_UIState extends State<iOS_Setting_UI> {
     return CupertinoPageScaffold(
         backgroundColor: CupertinoColors.lightBackgroundGray,
       navigationBar: CupertinoNavigationBar(
-        leading: Icon(CupertinoIcons.back,color: CupertinoColors.white,),
+        leading: GestureDetector(onTap: () {
+          Navigator.pop(context);
+        },child: Icon(CupertinoIcons.back,color: CupertinoColors.white,)),
         backgroundColor: CupertinoColors.systemRed,
         middle: Text("Settings UI",style: TextStyle(color: CupertinoColors.white),),
       ),

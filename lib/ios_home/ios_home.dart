@@ -11,20 +11,24 @@ class _iOS_HomeState extends State<iOS_Home> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(middle: Text("Welcome to iOS"),),
+      backgroundColor: CupertinoColors.white,
+      navigationBar: CupertinoNavigationBar(middle: Text("Welcome to iOS",style: TextStyle(fontSize: 25),),),
 
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-          CupertinoActivityIndicator(color: CupertinoColors.destructiveRed,animating: true,radius: 18),
+          children: [
 
-          CupertinoButton(child: Text("Setting UI"), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
-          CupertinoButton(child: Text("Cupertino Shopping"), onPressed: () => Navigator.pushNamed(context, "ios_shopping"),),
-          CupertinoButton(child: Text("App Store"), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
+            CupertinoActivityIndicator(color: CupertinoColors.destructiveRed,animating: true,radius: 18),
 
-          Text("iOS UI's"),
-        ],
+            CupertinoButton(child: Text("Setting UI",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
+            CupertinoButton(child: Text("Cupertino Shopping",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "cupertinostore"),),
+            CupertinoButton(child: Text("App Store",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
+
+            Text("iOS UI's"),
+          ],
+        ),
       ),
 
     );
