@@ -50,14 +50,23 @@ class _Cupertino_CartState extends State<Cupertino_Cart> {
                     SizedBox(width: 10,),
                     Text("Delivery time",style:TextStyle(color: CupertinoColors.systemGrey3,fontSize:15),),
                     Spacer(),
-                    Text("${DateTime.now()}",style:TextStyle(color: CupertinoColors.systemGrey3,fontSize:15),),
+                    Text("${cpT!.sdate.day} / ${cpT!.sdate.month} / ${cpT!.sdate.year}  ${cpT!.sdate.hour} : ${cpT!.sdate.minute}",style:TextStyle(color: CupertinoColors.systemGrey3,fontSize:15),),
                   ],),
                 ),
                 Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Container(height: 220,
                            child: CupertinoDatePicker(
-                           onDateTimeChanged: (value) {},
+
+
+                           onDateTimeChanged: (value) {
+                             DateTime? temp;
+                             temp = value;
+                             cpF!.datechange(temp);
+
+
+
+                           },
                            mode: CupertinoDatePickerMode.dateAndTime,
                            initialDateTime: DateTime.now(),
                              ),
@@ -105,16 +114,20 @@ class _Cupertino_CartState extends State<Cupertino_Cart> {
                       },
                       itemCount: cpT!.cartlist.length),
                 ),
-                Container(height: 150,
-                width: double.infinity,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text("Shipping \$ 21.00"),
-                    Text("Tax \$ 10.32"),
-                    Text("Total \$ ${cpT!.totalcart}")
-                  ],
-                ),)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 15),
+
+                  child: Container(height: 150,
+                  width: double.infinity,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text("Shipping \$ 21.00"),
+                      Text("Tax \$ 10.32"),
+                      Text("Total \$ ${cpT!.totalcart}",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                    ],
+                  ),),
+                )
               
 
 

@@ -34,19 +34,30 @@ class CupertinoProvider extends ChangeNotifier
 
   void addcart(int index)
   {
-
-
-
+    double subtotal = 0;
     cartheight = (cartlist.length +1 ) * 75;
     CupertinoModel temp = productlist[index];
     cartlist.add(temp);
     cartheight = (cartlist.length +1 ) * 75;
     for(int i = 0 ; i< cartlist.length; i++)
     {
-      totalcart = totalcart + cartlist[i].price! ;
+      subtotal = subtotal + cartlist[i].price! ;
     }
+    totalcart = subtotal + 31.32 ;
 
     notifyListeners();
+  }
+
+
+
+  //DateTime ddate = DateTime.now();
+  DateTime sdate = DateTime.now();
+
+  void datechange(DateTime temp)
+  {
+    sdate = temp;
+    notifyListeners();
+
   }
 
 
