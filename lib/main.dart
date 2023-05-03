@@ -11,6 +11,8 @@ import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 
+import 'cupertino_shopping/shopping_provider/shopping_provider.dart';
+import 'cupertino_shopping/shopping_view/shopping_home.dart';
 import 'google_play_store_ui/screens/app_view.dart';
 import 'ios_home/ios_home.dart';
 
@@ -29,6 +31,7 @@ void main() {
           providers: [
             ChangeNotifierProvider(create: (context) => SettingProvider(),),
             ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
+            ChangeNotifierProvider(create: (context) => CupertinoProvider(),),
           ],
 
           child:
@@ -48,10 +51,13 @@ void main() {
 
               CupertinoApp(
                 debugShowCheckedModeBanner: false,
-                //initialRoute: "ios_setting",
+                initialRoute: "ios_setting",
                 routes: {
                   "/":(context) => iOS_Home(),
                   "ios_setting": (context) => iOS_Setting_UI(),
+                  "cupertinostore":(context) => Cupertino_Store(),
+
+
                 },
               ),
 

@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:ios_vs_android_demo_ui/cupertino_shopping/shopping_provider/shopping_provider.dart';
+import 'package:provider/provider.dart';
 
 class Cupertino_Store extends StatefulWidget {
   const Cupertino_Store({Key? key}) : super(key: key);
@@ -8,11 +10,36 @@ class Cupertino_Store extends StatefulWidget {
 }
 
 class _Cupertino_StoreState extends State<Cupertino_Store> {
+
+  CupertinoProvider? cpT;
+  CupertinoProvider? cpF;
+
+
   @override
   Widget build(BuildContext context) {
+
+    cpT = Provider.of<CupertinoProvider>(context,listen: true);
+    cpF = Provider.of<CupertinoProvider>(context,listen: false);
+
     return CupertinoPageScaffold(
 
-      child: Text(""),
+      child: CupertinoTabScaffold(
+        tabBar: CupertinoTabBar(items: [
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.house),label: "Products"),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.search),label: "Search"),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.shopping_cart),label: "Cart"),
+
+        ],),
+        tabBuilder: (context, index) {
+          return CupertinoTabView(
+            builder: (context) {
+              return cpT!.screens[index];
+            },
+          );
+
+        },
+
+      ),
     );
   }
 }

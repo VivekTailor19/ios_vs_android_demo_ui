@@ -29,6 +29,7 @@ class _iOS_Setting_UIState extends State<iOS_Setting_UI> {
     return CupertinoPageScaffold(
         backgroundColor: CupertinoColors.lightBackgroundGray,
       navigationBar: CupertinoNavigationBar(
+        leading: Icon(CupertinoIcons.back,color: CupertinoColors.white,),
         backgroundColor: CupertinoColors.systemRed,
         middle: Text("Settings UI",style: TextStyle(color: CupertinoColors.white),),
       ),
