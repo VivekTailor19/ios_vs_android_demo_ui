@@ -11,6 +11,7 @@ import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 
+import 'app_store/view/appstore_home.dart';
 import 'cupertino_shopping/shopping_provider/shopping_provider.dart';
 import 'cupertino_shopping/shopping_view/shopping_home.dart';
 import 'google_play_store_ui/screens/app_view.dart';
@@ -51,12 +52,13 @@ void main() {
 
               CupertinoApp(
                 debugShowCheckedModeBanner: false,
-                initialRoute: "cupertinostore",
+               // initialRoute: "cupertinostore",
                 routes: {
                   "/":(context) => iOS_Home(),
                   "home":(context) => iOS_Home(),
                   "ios_setting": (context) => iOS_Setting_UI(),
                   "cupertinostore":(context) => Cupertino_Store(),
+                  "appstore":(context) => App_Store_HomeScreen(),
 
 
                 },

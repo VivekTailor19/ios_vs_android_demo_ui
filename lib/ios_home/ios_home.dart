@@ -24,7 +24,7 @@ class _iOS_HomeState extends State<iOS_Home> {
 
             CupertinoButton(child: Text("Setting UI",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
             CupertinoButton(child: Text("Cupertino Shopping",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "cupertinostore"),),
-            CupertinoButton(child: Text("App Store",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "ios_setting"),),
+            CupertinoButton(child: Text("App Store",style: TextStyle(fontSize: 30),), onPressed: () => Navigator.pushNamed(context, "appstore"),),
 
             Text("iOS UI's"),
           ],
