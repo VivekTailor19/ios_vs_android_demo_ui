@@ -42,22 +42,28 @@ class _iOS_Setting_UIState extends State<iOS_Setting_UI> {
         children: [
           Titletext("Common"),
           CommonTile(title: "Language",icon: CupertinoIcons.globe,additional: "English"),
+          Liner(),
           CommonTile(title: "Environment",icon: CupertinoIcons.cloud_fill,additional: "Production"),
 
           Titletext("Account"),
           AccountTile(title: "Phone number",icon: CupertinoIcons.phone_fill ),
+          Liner(),
           AccountTile(title: "Email",icon: CupertinoIcons.mail_solid ),
+          Liner(),
           AccountTile(title: "Sign out",icon: CupertinoIcons.arrow_right_square ),
 
 
           Titletext("Security"),
           SecurityTile(title: "Lock app in background",icon: CupertinoIcons.lock,swit:spT!.lockapp, onchangemethod:spF!.lockappfun),
+          Liner(),
           SecurityTile(title:"Use fingerprint",icon: CupertinoIcons.hand_thumbsdown_fill,swit: spT!.usefinger,onchangemethod: spF!.usefingerfun),
+          Liner(),
           SecurityTile(title:"Change Password",icon: CupertinoIcons.lock,swit: spT!.changepassword,onchangemethod: spF!.changepasswordfun),
 
 
           Titletext("Misc"),
           MiscTile(title: "Terms of Service",icon: CupertinoIcons.doc_text),
+          Liner(),
           MiscTile(title: "Open source",icon: CupertinoIcons.doc_append),
 
 
@@ -128,6 +134,11 @@ class _iOS_Setting_UIState extends State<iOS_Setting_UI> {
 
 
     );
+  }
+
+  Widget Liner()
+  {
+    return Container(height: 1,color: CupertinoColors.systemGrey5,);
   }
 
 }
