@@ -4,5 +4,5 @@ class CupertinoModel
   double? price;
   int? qty;
 
-  CupertinoModel({this.name, this.image, this.price,this.qty});
+  CupertinoModel({this.name, this.image, this.price, this.qty});
 }

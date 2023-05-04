@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ios_vs_android_demo_ui/app_store/provider/appstore_provider.dart';
 import 'package:ios_vs_android_demo_ui/google_play_store_ui/provider/google_play_provider.dart';
 import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/homescreen/first_screen.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/android_setting.dart';
@@ -33,6 +34,8 @@ void main() {
             ChangeNotifierProvider(create: (context) => SettingProvider(),),
             ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
             ChangeNotifierProvider(create: (context) => CupertinoProvider(),),
+            ChangeNotifierProvider(create: (context) => AppStoreProvider(),),
+
           ],
 
           child:
