@@ -358,6 +358,21 @@ class _App_View_AndroidState extends State<App_View_Android> {
                   ),
                 ],
               ),
+
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Ratings and reviews",
+                      style: TextStyle(fontSize: 21),
+                    ),
+                    Icon(Icons.arrow_forward)
+                  ],
+                ),
+              ),
+
               Container(
                 width: double.infinity,
                 child: Text(
@@ -368,38 +383,51 @@ class _App_View_AndroidState extends State<App_View_Android> {
                   ),
                 ),
               ),
+
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Row(
                   children: [
                     Container(
-                      width: 130,
-                      height: 200,
-                      color: Colors.red,
+                      width: 100,
+                      height: 150,
+                      alignment: Alignment.centerLeft,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
-                        children: [],
+                        children: [
+                          Text("4.7",style: TextStyle(fontSize: 50),),
+                          Row(mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.star,color: Colors.teal,size: 15,),
+                              Icon(Icons.star,color: Colors.teal,size: 15,),
+                              Icon(Icons.star,color: Colors.teal,size: 15,),
+                              Icon(Icons.star,color: Colors.teal,size: 15,),
+
+                              Icon(Icons.star_half_sharp,color: Colors.teal,size: 15,),
+                            ],
+                          ),
+                          Text("11,99,015",style: TextStyle(color: Colors.black54,fontSize: 11.5),)
+
+
+                        ],
                       ),
                     ),
                     Container(
                       width: 180,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            "Ratings and reviews",
-                            style: TextStyle(fontSize: 21),
-                          ),
-                          Icon(Icons.arrow_forward)
+                          Text("5"),
+                          Container(height: 5,width:50,
+                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                              child: LinearProgressIndicator(color: Colors.teal,value: 0.8,))
                         ],
                       ),
                     ),
+
                   ],
                 ),
               ),
+              SizedBox(height: 20),
             ],
           ),
         ),
