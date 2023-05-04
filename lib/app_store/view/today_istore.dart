@@ -73,13 +73,16 @@ class _iOS_TodayState extends State<iOS_Today> {
   }
 
   Widget TodayPost(String todaypost) {
-    return Container(
-      height: 450,
-      width: 300,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(25),
-        image:
-            DecorationImage(image: AssetImage("$todaypost"), fit: BoxFit.fill),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 15),
+      child: Container(
+        height: 450,
+        width: 300,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(25),
+
+          image: DecorationImage(image: AssetImage("$todaypost"), fit: BoxFit.fill),
+        ),
       ),
     );
   }
