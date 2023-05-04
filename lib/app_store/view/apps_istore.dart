@@ -61,7 +61,7 @@ class _iOS_AppsState extends State<iOS_Apps> {
             ), //Top bar
 
             Container(
-              height: 410,
+              height: 360,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: aspF!.newapplist.length,

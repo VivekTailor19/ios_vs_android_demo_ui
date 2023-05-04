@@ -4,3 +4,12 @@ class AppStoreAppsModel
 
   AppStoreAppsModel({this.appname, this.apptag, this.appimage});
 }
+
+
+
+
+  
+
+
+
+
