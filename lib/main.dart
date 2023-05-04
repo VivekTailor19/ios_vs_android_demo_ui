@@ -11,6 +11,7 @@ import 'package:ios_vs_android_demo_ui/settings_ui/android_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
+import 'package:sizer/sizer.dart';
 
 import 'app_store/view/appstore_home.dart';
 import 'cupertino_shopping/shopping_provider/shopping_provider.dart';
@@ -29,17 +30,19 @@ void main() {
 
       DevicePreview(
         enabled: !kReleaseMode,
-        builder: (context) => MultiProvider(
-          providers: [
-            ChangeNotifierProvider(create: (context) => SettingProvider(),),
-            ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
-            ChangeNotifierProvider(create: (context) => CupertinoProvider(),),
-            ChangeNotifierProvider(create: (context) => AppStoreProvider(),),
+        builder: (context) => Sizer(
+          builder: (context, orientation, deviceType) {
+            return MultiProvider(
+              providers: [
+                ChangeNotifierProvider(create: (context) => SettingProvider(),),
+                ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
+                ChangeNotifierProvider(create: (context) => CupertinoProvider(),),
+                ChangeNotifierProvider(create: (context) => AppStoreProvider(),),
 
-          ],
+              ],
 
-          child:
-           // Platform.isAndroid != true ?
+              child:
+              // Platform.isAndroid != true ?
 
               // MaterialApp(
               //   debugShowCheckedModeBanner: false,
@@ -51,11 +54,11 @@ void main() {
               //       "appview":(context) => App_View_Android(),
               //     },
               // )
-                //:
+              //:
 
               CupertinoApp(
                 debugShowCheckedModeBanner: false,
-               // initialRoute: "cupertinostore",
+                // initialRoute: "cupertinostore",
                 routes: {
                   "/":(context) => iOS_Home(),
                   "home":(context) => iOS_Home(),
@@ -67,7 +70,10 @@ void main() {
                 },
               ),
 
-          ),
+            );
+          },
+
+        ),
       ),
 
 

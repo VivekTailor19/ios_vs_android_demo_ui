@@ -69,6 +69,14 @@ class _Cupertino_ProductsState extends State<Cupertino_Products> {
                           CupertinoButton(
                             child: Icon(CupertinoIcons.add_circled),
                             onPressed: () {
+                              showCupertinoModalPopup(context: context, builder: (context) {
+                                return CupertinoActionSheet(
+
+                                  title:Text("${cpT!.productlist[index].name} is added in Cart...",
+                                    style: TextStyle(fontSize: 25),),
+
+                                );
+                              },);
                             cpF!.addcart(index);
                           },)
 
