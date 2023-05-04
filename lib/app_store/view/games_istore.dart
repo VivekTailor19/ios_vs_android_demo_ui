@@ -178,8 +178,8 @@ class _iOS_GamesState extends State<iOS_Games> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      SizedBox(width:240,child: Text("$gamename",style: TextStyle(fontSize: 23),overflow: TextOverflow.ellipsis)),
-                      SizedBox(width:240,child: Text("$gametag",style: TextStyle(fontSize: 18,color: CupertinoColors.systemGrey2,),),),
+                      SizedBox(width:175,child: Text("$gamename",style: TextStyle(fontSize: 23),overflow: TextOverflow.ellipsis)),
+                      SizedBox(width:175,child: Text("$gametag",style: TextStyle(fontSize: 18,color: CupertinoColors.systemGrey2,),overflow: TextOverflow.ellipsis),),
                       Spacer(),
                       Row( mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -196,7 +196,7 @@ class _iOS_GamesState extends State<iOS_Games> {
                                 )),
                           ),
                           SizedBox(width: 10),
-                          Text("In-App\nPurchases",style: TextStyle(color: CupertinoColors.systemGrey2,fontSize: 12),)
+                          SizedBox(width:60,child: Text("In-App\nPurchases",style: TextStyle(color: CupertinoColors.systemGrey2,fontSize: 12),overflow: TextOverflow.ellipsis),),
                         ],
                       ),
                       SizedBox(height: 10,)

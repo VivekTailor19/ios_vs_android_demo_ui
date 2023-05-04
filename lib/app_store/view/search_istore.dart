@@ -36,7 +36,7 @@ class _iOS_SearchState extends State<iOS_Search> {
                       Text(
                         "Find Premium Items",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 35),
+                            fontWeight: FontWeight.bold, fontSize: 30),
                       ),
                       Container(
                         height: 50,

@@ -44,31 +44,31 @@ void main() {
               child:
               // Platform.isAndroid != true ?
 
-              // MaterialApp(
-              //   debugShowCheckedModeBanner: false,
-              //   initialRoute: "googleplay",
-              //   routes: {
-              //       "ios_setting": (context) => iOS_Setting_UI(),
-              //       "android_setting":(context) => Android_Settings(),
-              //       "googleplay":(context) => First_Screen(),
-              //       "appview":(context) => App_View_Android(),
-              //     },
-              // )
-              //:
-
-              CupertinoApp(
+              MaterialApp(
                 debugShowCheckedModeBanner: false,
-                // initialRoute: "cupertinostore",
+                initialRoute: "appview",
                 routes: {
-                  "/":(context) => iOS_Home(),
-                  "home":(context) => iOS_Home(),
-                  "ios_setting": (context) => iOS_Setting_UI(),
-                  "cupertinostore":(context) => Cupertino_Store(),
-                  "appstore":(context) => App_Store_HomeScreen(),
-
-
-                },
-              ),
+                    "ios_setting": (context) => iOS_Setting_UI(),
+                    "android_setting":(context) => Android_Settings(),
+                    "googleplay":(context) => First_Screen(),
+                    "appview":(context) => App_View_Android(),
+                  },
+              )
+              // :
+              //
+              // CupertinoApp(
+              //   debugShowCheckedModeBanner: false,
+              //   // initialRoute: "cupertinostore",
+              //   routes: {
+              //     "/":(context) => iOS_Home(),
+              //     "home":(context) => iOS_Home(),
+              //     "ios_setting": (context) => iOS_Setting_UI(),
+              //     "cupertinostore":(context) => Cupertino_Store(),
+              //     "appstore":(context) => App_Store_HomeScreen(),
+              //
+              //
+              //   },
+              // ),
 
             );
           },

@@ -25,6 +25,7 @@ class _App_Store_HomeScreenState extends State<App_Store_HomeScreen> {
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
+
         items: [
           BottomNavigationBarItem(
               icon: Icon(
@@ -55,6 +56,7 @@ class _App_Store_HomeScreenState extends State<App_Store_HomeScreen> {
       ),
       tabBuilder: (context, index) {
         return CupertinoTabView(
+
           builder: (context) {
             return appstorescreens[index];
           },
