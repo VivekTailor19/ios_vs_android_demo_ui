@@ -25,6 +25,7 @@ class GooglePlayProvider extends ChangeNotifier {
         ]
     ),
     ApplicationModel(apprating: 4, appname: "Google Lens",appimage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Lens_-_new_logo.png/768px-Google_Lens_-_new_logo.png"),
+
     ApplicationModel(apprating: 4.9,appname: "Google Maps",appimage: "https://static.wikia.nocookie.net/google/images/1/19/Google_Maps_Icon.png/revision/latest?cb=20201022161440",
     imgpack: [
       "https://play-lh.googleusercontent.com/PJkiXQiABQxpVdHMpvOux53wP2TVuYg0fq9K5JYYDO336nvbX-0ShhHWzZGnagmWlw=w2560-h1440-rw",
