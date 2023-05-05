@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/apps_screen/apps_categories.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/apps_screen/apps_children.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/apps_screen/apps_foryou.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/apps_screen/apps_topcharts.dart';
+
+import 'apps_categories.dart';
+import 'apps_children.dart';
+import 'apps_foryou.dart';
+import 'apps_topcharts.dart';
+
 
 class Apps_HomeScreen extends StatefulWidget {
   const Apps_HomeScreen({Key? key}) : super(key: key);

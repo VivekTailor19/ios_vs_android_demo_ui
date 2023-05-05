@@ -1,15 +1,19 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ios_vs_android_demo_ui/app_store/provider/appstore_provider.dart';
+
 import 'package:provider/provider.dart';
 
-class iOS_Updates extends StatefulWidget {
-  const iOS_Updates({Key? key}) : super(key: key);
+import '../provider/appstore_provider.dart';
+
+
+
+class iOS_Today extends StatefulWidget {
+  const iOS_Today({Key? key}) : super(key: key);
 
   @override
-  State<iOS_Updates> createState() => _iOS_UpdatesState();
+  State<iOS_Today> createState() => _iOS_TodayState();
 }
 
-class _iOS_UpdatesState extends State<iOS_Updates> {
+class _iOS_TodayState extends State<iOS_Today> {
   AppStoreProvider? aspT;
   AppStoreProvider? aspF;
 
@@ -30,12 +34,15 @@ class _iOS_UpdatesState extends State<iOS_Updates> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
+                  Text(
+                    "WEDNESDAY, SEPTEMBER 12",
+                    style: TextStyle(color: CupertinoColors.systemGrey),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Updates",
+                        "Today",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 50),
                       ),

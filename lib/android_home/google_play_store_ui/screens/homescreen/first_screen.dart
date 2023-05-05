@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/provider/google_play_provider.dart';
 
 import 'package:provider/provider.dart';
 
+import '../../provider/google_play_provider.dart';
 import '../apps_screen/app_homescreen.dart';
 import '../books_screen/books_homescreen.dart';
 import '../games_screen/game_homescreen.dart';

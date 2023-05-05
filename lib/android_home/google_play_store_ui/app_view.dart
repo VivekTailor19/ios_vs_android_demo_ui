@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/provider/google_play_provider.dart';
 import 'package:provider/provider.dart';
+
+import 'provider/google_play_provider.dart';
 
 class App_View_Android extends StatefulWidget {
   const App_View_Android({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
     gpF = Provider.of<GooglePlayProvider>(context, listen: false);
     gpT = Provider.of<GooglePlayProvider>(context, listen: true);
 
-    //int i = ModalRoute.of(context)!.settings.arguments as int;
+    int no = ModalRoute.of(context)!.settings.arguments as int;
 
     return SafeArea(
         child: Scaffold(
@@ -61,7 +62,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                           image: NetworkImage(
-                              "https://cdn-icons-png.flaticon.com/512/5968/5968499.png"),
+                              "${gpT!.googleitems[no].appimage}"),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -75,7 +76,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
-                            "Google Drive",
+                            "${gpT!.googleitems[no].appname}",
                             style: TextStyle(
                                 fontSize: 17, fontWeight: FontWeight.bold),
                           ),
@@ -109,7 +110,7 @@ class _App_View_AndroidState extends State<App_View_Android> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          "4.4 ⭐",
+                          "${gpT!.googleitems[no].apprating} ⭐",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -187,12 +188,15 @@ class _App_View_AndroidState extends State<App_View_Android> {
                   ),
                 ),
               ),
-              Container(
+              (gpF!.imgpacklength >=1)
+                  ?
+                  Container(
                 height: 150,
-                child: ListView(
+                child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  children: [
-                    Padding(
+                  itemCount: gpF!.imgpacklength,
+                  itemBuilder: (context, index) {
+                    return Padding(
                       padding: EdgeInsets.symmetric(horizontal: 8),
                       child: Container(
                         height: 120,
@@ -202,44 +206,18 @@ class _App_View_AndroidState extends State<App_View_Android> {
                           color: Colors.red,
                           image: DecorationImage(
                               image: NetworkImage(
-                                  "${gpF!.googleitems[0].imgpack![5]}"),
+                                  "${gpF!.googleitems[no].imgpack![index]}"),
                               fit: BoxFit.fill),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Container(
-                        height: 120,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.red,
-                          image: DecorationImage(
-                              image: NetworkImage(
-                                  "${gpF!.googleitems[0].imgpack![0]}"),
-                              fit: BoxFit.fill),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: Container(
-                        height: 120,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.red,
-                          image: DecorationImage(
-                              image: NetworkImage(
-                                  "${gpF!.googleitems[0].imgpack![2]}"),
-                              fit: BoxFit.fill),
-                        ),
-                      ),
-                    ),
-                  ],
+                    );
+                  },
+
                 ),
-              ),
+              )
+                  :
+                  Container(height: 1,width: 1,),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

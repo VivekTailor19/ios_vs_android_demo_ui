@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ios_vs_android_demo_ui/app_store/view/apps_istore.dart';
-import 'package:ios_vs_android_demo_ui/app_store/view/games_istore.dart';
-import 'package:ios_vs_android_demo_ui/app_store/view/search_istore.dart';
-import 'package:ios_vs_android_demo_ui/app_store/view/today_istore.dart';
-import 'package:ios_vs_android_demo_ui/app_store/view/updates_istore.dart';
+
+
+import 'apps_istore.dart';
+import 'games_istore.dart';
+import 'search_istore.dart';
+import 'today_istore.dart';
+import 'updates_istore.dart';
+
 
 class App_Store_HomeScreen extends StatefulWidget {
   const App_Store_HomeScreen({Key? key}) : super(key: key);

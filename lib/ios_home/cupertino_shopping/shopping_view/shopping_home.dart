@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ios_vs_android_demo_ui/cupertino_shopping/shopping_provider/shopping_provider.dart';
 import 'package:provider/provider.dart';
+
+import '../shopping_provider/shopping_provider.dart';
 
 class Cupertino_Store extends StatefulWidget {
   const Cupertino_Store({Key? key}) : super(key: key);

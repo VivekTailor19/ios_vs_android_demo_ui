@@ -1,23 +1,20 @@
 
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ios_vs_android_demo_ui/app_store/provider/appstore_provider.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/provider/google_play_provider.dart';
-import 'package:ios_vs_android_demo_ui/google_play_store_ui/screens/homescreen/first_screen.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/android_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 
-import 'app_store/view/appstore_home.dart';
-import 'cupertino_shopping/shopping_provider/shopping_provider.dart';
-import 'cupertino_shopping/shopping_view/shopping_home.dart';
-import 'google_play_store_ui/screens/app_view.dart';
-import 'ios_home/ios_home.dart';
+
+import 'android_home/google_play_store_ui/provider/google_play_provider.dart';
+import 'android_home/google_play_store_ui/app_view.dart';
+import 'android_home/google_play_store_ui/screens/homescreen/first_screen.dart';
+import 'ios_home/app_store/provider/appstore_provider.dart';
+import 'ios_home/cupertino_shopping/shopping_provider/shopping_provider.dart';
 
 
 void main() {
@@ -46,7 +43,7 @@ void main() {
 
               MaterialApp(
                 debugShowCheckedModeBanner: false,
-                initialRoute: "appview",
+                initialRoute: "googleplay",
                 routes: {
                     "ios_setting": (context) => iOS_Setting_UI(),
                     "android_setting":(context) => Android_Settings(),
