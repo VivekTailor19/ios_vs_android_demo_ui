@@ -5,14 +5,14 @@ Various UI's
 # Android UI's
 
 
-** Setting UI **
+<h1>** Setting UI **</h1>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621304-5161b689-061d-4315-b350-9ac6698def39.jpg" width="250" height="450" >
 <img src = "https://user-images.githubusercontent.com/119835214/236621308-44810a9c-22ba-4430-b423-d11e19df77b2.jpg" width="250" height="450" >
 </p>
 
 
-** Google Play Store **
+<h1>** Google Play Store **</h2>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621577-fcaa55fb-f859-4cd2-a654-94833ca93446.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621581-5870f3f8-3d38-46e4-b2e2-39a1d70f1862.jpg" width="250" height="450">
