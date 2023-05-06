@@ -7,7 +7,7 @@ import 'package:ios_vs_android_demo_ui/settings_ui/android_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
 import 'package:provider/provider.dart';
-import 'package:sizer/sizer.dart';
+
 
 
 import 'android_home/google_play_store_ui/provider/google_play_provider.dart';
@@ -27,9 +27,7 @@ void main() {
 
       DevicePreview(
         enabled: !kReleaseMode,
-        builder: (context) => Sizer(
-          builder: (context, orientation, deviceType) {
-            return MultiProvider(
+        builder: (context) => MultiProvider(
               providers: [
                 ChangeNotifierProvider(create: (context) => SettingProvider(),),
                 ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
@@ -67,11 +65,11 @@ void main() {
               //   },
               // ),
 
-            );
-          },
+            ),
+
 
         ),
-      ),
+
 
 
 
