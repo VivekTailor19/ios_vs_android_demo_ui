@@ -5,7 +5,7 @@ Various UI's
 # Android UI's
 
 <br>
-<h4>** Setting UI **</h4>
+<h3>** Setting UI **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621304-5161b689-061d-4315-b350-9ac6698def39.jpg" width="250" height="450" >
 <img src = "https://user-images.githubusercontent.com/119835214/236621308-44810a9c-22ba-4430-b423-d11e19df77b2.jpg" width="250" height="450" >
