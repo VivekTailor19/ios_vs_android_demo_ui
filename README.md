@@ -14,12 +14,11 @@ Various UI's
 
 <h3>** Google Play Store **</h3>
 <p>
-<img src = "https://user-images.githubusercontent.com/119835214/236621577-fcaa55fb-f859-4cd2-a654-94833ca93446.jpg" width="250" height="450">
-<img src = "https://user-images.githubusercontent.com/119835214/236621581-5870f3f8-3d38-46e4-b2e2-39a1d70f1862.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621583-94aeef94-2b59-4daa-ad81-ad3a98018317.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621584-bb310752-89ef-4367-8ce8-c8d8fca5c6aa.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621588-b9503724-6b8a-497b-af85-d43335c530b4.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621589-3dbe040c-146c-4692-aa59-57487c6ce71a.jpg" width="250" height="450">
+<img src = "https://user-images.githubusercontent.com/119835214/236621581-5870f3f8-3d38-46e4-b2e2-39a1d70f1862.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621591-8fe0bc05-2ec5-4c2f-88ca-039e177e0926.jpg" width="250" height="450">
 </p>
 
