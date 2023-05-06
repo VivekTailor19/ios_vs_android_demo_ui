@@ -12,7 +12,7 @@ Various UI's
 </p>
 
 
-<h5>** Google Play Store **</h5>
+<h3>** Google Play Store **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621577-fcaa55fb-f859-4cd2-a654-94833ca93446.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236621581-5870f3f8-3d38-46e4-b2e2-39a1d70f1862.jpg" width="250" height="450">
@@ -30,14 +30,14 @@ Various UI's
 # iOS UI's
 
 
-** Setting UI **
+<h3>** Setting UI **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621790-aa0f1ff7-2896-4bfa-bcb8-31801ecf7a31.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621792-999b4395-ed13-4298-9ff1-59c16a1ca6e3.jpg" width="300" height="500">
 </p>
 
 
-** AppStore **
+<h3>** AppStore **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621890-b183cda6-e256-4eb1-a029-2a1abeb4c804.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621893-0fb6d78c-d846-473f-9198-db4d4b4bf60f.jpg" width="300" height="500">
@@ -48,7 +48,7 @@ Various UI's
 </p>
 
 
-** CupertinoStore **
+<h3>** CupertinoStore **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621962-daf41f70-5d87-446e-a6f9-fe687af405fe.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621963-fbf27d19-1ec1-4e2a-8db1-3f53f5201cf4.jpg" width="300" height="500">
