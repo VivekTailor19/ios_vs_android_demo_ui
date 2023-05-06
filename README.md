@@ -50,14 +50,14 @@ Various UI's
 
 <h3>** CupertinoStore **</h3>
 <p>
+<img src = "https://user-images.githubusercontent.com/119835214/236621969-b92042d5-83f1-43f4-bbf8-4fde839e81b7.jpg" width="300" height="500">
+<img src = "https://user-images.githubusercontent.com/119835214/236621960-0484a6c1-a396-4101-a4be-d610a046763c.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621962-daf41f70-5d87-446e-a6f9-fe687af405fe.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621963-fbf27d19-1ec1-4e2a-8db1-3f53f5201cf4.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621964-3b2f26b0-99e5-4a4a-867c-c25bcd34d7a3.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621965-800b9af3-9069-41d1-a2e7-62bde25e0f52.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621967-d71ca5f4-c1bc-4da5-a8f8-504d47d4c48f.jpg" width="300" height="500">
 <img src = "https://user-images.githubusercontent.com/119835214/236621968-3a802a16-031b-4e03-8463-9144b7731569.jpg" width="300" height="500">
-<img src = "https://user-images.githubusercontent.com/119835214/236621969-b92042d5-83f1-43f4-bbf8-4fde839e81b7.jpg" width="300" height="500">
-<img src = "https://user-images.githubusercontent.com/119835214/236621960-0484a6c1-a396-4101-a4be-d610a046763c.jpg" width="300" height="500">
 </p>
 
 
