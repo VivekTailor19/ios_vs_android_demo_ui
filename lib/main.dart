@@ -39,9 +39,10 @@ void main() {
               child:
               // Platform.isAndroid != true ?
 
+
               MaterialApp(
                 debugShowCheckedModeBanner: false,
-                initialRoute: "googleplay",
+                initialRoute: "android_setting",
                 routes: {
                     "ios_setting": (context) => iOS_Setting_UI(),
                     "android_setting":(context) => Android_Settings(),
