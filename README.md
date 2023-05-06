@@ -26,8 +26,8 @@ Various UI's
 
 ** Setting UI **
 <p>
-<img src = "https://user-images.githubusercontent.com/119835214/236621790-aa0f1ff7-2896-4bfa-bcb8-31801ecf7a31.jpg" width="300" height="450">
-<img src = "https://user-images.githubusercontent.com/119835214/236621792-999b4395-ed13-4298-9ff1-59c16a1ca6e3.jpg" width="300" height="450">
+<img src = "https://user-images.githubusercontent.com/119835214/236621790-aa0f1ff7-2896-4bfa-bcb8-31801ecf7a31.jpg" width="300" height="500">
+<img src = "https://user-images.githubusercontent.com/119835214/236621792-999b4395-ed13-4298-9ff1-59c16a1ca6e3.jpg" width="300" height="500">
 </p>
 
 
