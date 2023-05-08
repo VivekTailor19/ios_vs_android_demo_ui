@@ -11,7 +11,7 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236621308-44810a9c-22ba-4430-b423-d11e19df77b2.jpg" width="250" height="450" >
 </p>
 
-
+<br>
 <h3>** Google Play Store **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621583-94aeef94-2b59-4daa-ad81-ad3a98018317.jpg" width="250" height="450">
@@ -22,7 +22,7 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236621591-8fe0bc05-2ec5-4c2f-88ca-039e177e0926.jpg" width="250" height="450">
 </p>
 
-
+<br><br>
 <h3>** Login Stepper **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236788848-9333dafd-8c34-42e8-8697-533c2cbaab20.jpg" width="250" height="450">
