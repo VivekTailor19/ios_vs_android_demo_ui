@@ -29,6 +29,12 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236788854-561eb330-1e64-445b-ba62-9f15d1863f6e.jpg" width="250" height="450">
 </p>
 
+<h3>** Register Stepper **</h3>
+<img src = "https://user-images.githubusercontent.com/119835214/236789397-888a19a1-288d-4761-a636-e457991b52a6.jpg" width="250" height="450">
+<img src = "https://user-images.githubusercontent.com/119835214/236789410-4974bbd9-cc23-4b87-bc10-c780b34435f8.jpg" width="250" height="450">
+<img src = "https://user-images.githubusercontent.com/119835214/236789414-05b01d02-0278-465e-97bc-eb3df9863c31.jpg" width="250" height="450">
+</p>
+
 
 
 <br><br><br>
