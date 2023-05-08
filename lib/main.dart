@@ -6,9 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/android_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/ios_setting.dart';
 import 'package:ios_vs_android_demo_ui/settings_ui/setting_provioder.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/vertical_stepper.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/stepper_splash.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/vstepper_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 
@@ -38,7 +35,6 @@ void main() {
                 ChangeNotifierProvider(create: (context) => GooglePlayProvider(),),
                 ChangeNotifierProvider(create: (context) => CupertinoProvider(),),
                 ChangeNotifierProvider(create: (context) => AppStoreProvider(),),
-                ChangeNotifierProvider(create: (context) => VStepper(),),
 
               ],
 
@@ -47,14 +43,12 @@ void main() {
 
               MaterialApp(
                 debugShowCheckedModeBanner: false,
-                initialRoute: "stepper_splash",
+                initialRoute: "googleplay",
                 routes: {
                     "ios_setting": (context) => iOS_Setting_UI(),
                     "android_setting":(context) => Android_Settings(),
                     "googleplay":(context) => First_Screen(),
                     "appview":(context) => App_View_Android(),
-                    "stepper_splash":(context) => Splash_Stepper(),
-                    "vstepper":(context) => Vertical_Stepper(),
                   },
               )
               // :

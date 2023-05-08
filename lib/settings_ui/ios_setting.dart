@@ -76,7 +76,7 @@ class _iOS_Setting_UIState extends State<iOS_Setting_UI> {
 
   Widget Titletext(String title) => Padding(
     padding: const EdgeInsets.only(top: 30,left: 20,bottom: 5),
-    child: Text("$title",style: TextStyle(fontSize:17,color: CupertinoColors.systemGrey, ),),
+    child: Text("$title",style: TextStyle(fontSize:17,color: CupertinoColors.systemGrey,decoration: TextDecoration.none ),),
   );
 
   Widget CommonTile({String? title, IconData? icon, String? additional})
