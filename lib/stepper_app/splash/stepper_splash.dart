@@ -16,7 +16,7 @@ class _Splash_StepperState extends State<Splash_Stepper> {
   Widget build(BuildContext context) {
 
     Future.delayed(Duration(seconds: 3,),() {
-      Navigator.pushNamed(context, "vstepper");
+      Navigator.pushNamed(context, "stepperhome");
     },);
 
     return SafeArea(

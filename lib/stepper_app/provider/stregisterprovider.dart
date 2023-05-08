@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
-class VStepper extends ChangeNotifier
+class RegisterProvider extends ChangeNotifier
 {
   int currentstep = 0;
 
   void stepcontinue()
   {
-    if(currentstep<2)
+    if(currentstep<10)
     {
       currentstep++;
     }
@@ -21,5 +21,4 @@ class VStepper extends ChangeNotifier
     }
     notifyListeners();
   }
-
 }

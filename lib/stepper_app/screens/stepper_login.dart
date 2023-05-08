@@ -1,33 +1,30 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/vstepper_provider.dart';
+import 'package:ios_vs_android_demo_ui/stepper_app/provider/stloginprovider.dart';
 import 'package:provider/provider.dart';
 
-class Vertical_Stepper extends StatefulWidget {
-  const Vertical_Stepper({Key? key}) : super(key: key);
+class Stepper_Login extends StatefulWidget {
+  const Stepper_Login({Key? key}) : super(key: key);
 
   @override
-  State<Vertical_Stepper> createState() => _Vertical_StepperState();
+  State<Stepper_Login> createState() => _Stepper_LoginState();
 }
 
-class _Vertical_StepperState extends State<Vertical_Stepper> {
-  VStepper? vsT;
-  VStepper? vsF;
+class _Stepper_LoginState extends State<Stepper_Login> {
+  LoginProvider? vsT;
+  LoginProvider? vsF;
 
   @override
   Widget build(BuildContext context) {
-    vsT = Provider.of<VStepper>(context, listen: true);
-    vsF = Provider.of<VStepper>(context, listen: false);
+    vsT = Provider.of<LoginProvider>(context, listen: true);
+    vsF = Provider.of<LoginProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           title: Text("Stepper App"),
-          backgroundColor: Colors.red,
+         // backgroundColor: Colors.blue,
         ),
         body: Stepper(
-          controlsBuilder: (context, details) {
-
-          },
 
           currentStep: vsT!.currentstep,
           onStepCancel: () {
@@ -38,6 +35,7 @@ class _Vertical_StepperState extends State<Vertical_Stepper> {
           },
           steps: [
             Step(
+              isActive: true,
                 title: Text("SignUp"),
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -65,6 +63,7 @@ class _Vertical_StepperState extends State<Vertical_Stepper> {
                   ],
                 )),
             Step(
+              isActive: true,
                 title: Text("Login"),
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -83,6 +82,7 @@ class _Vertical_StepperState extends State<Vertical_Stepper> {
                   ],
                 )),
             Step(
+
                 title: Text("Home"),
                 content: Text(""),
                 isActive: true,
