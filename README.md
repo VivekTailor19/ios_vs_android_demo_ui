@@ -22,13 +22,16 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236621591-8fe0bc05-2ec5-4c2f-88ca-039e177e0926.jpg" width="250" height="450">
 </p>
 
-<br><br>
+
+<br>
 <h3>** Login Stepper **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236788848-9333dafd-8c34-42e8-8697-533c2cbaab20.jpg" width="250" height="450">
 <img src = "https://user-images.githubusercontent.com/119835214/236788854-561eb330-1e64-445b-ba62-9f15d1863f6e.jpg" width="250" height="450">
 </p>
 
+
+<br>
 <h3>** Register Stepper **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236789397-888a19a1-288d-4761-a636-e457991b52a6.jpg" width="250" height="450">
@@ -49,7 +52,7 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236621792-999b4395-ed13-4298-9ff1-59c16a1ca6e3.jpg" width="300" height="500">
 </p>
 
-
+<br>
 <h3>** AppStore **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621890-b183cda6-e256-4eb1-a029-2a1abeb4c804.jpg" width="300" height="500">
@@ -60,7 +63,7 @@ Various UI's
 <img src = "https://user-images.githubusercontent.com/119835214/236621899-bde272fa-c2c6-4925-8e7a-53b8be6d8777.jpg" width="300" height="500">
 </p>
 
-
+<br>
 <h3>** CupertinoStore **</h3>
 <p>
 <img src = "https://user-images.githubusercontent.com/119835214/236621969-b92042d5-83f1-43f4-bbf8-4fde839e81b7.jpg" width="300" height="500">
