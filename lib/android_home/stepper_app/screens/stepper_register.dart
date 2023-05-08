@@ -37,9 +37,27 @@ class _Stepper_RegistrationState extends State<Stepper_Registration> {
           onStepCancel: () => rpF!.stepcancel(),
           steps: [
             Step(title: Text("Profile Picture"),isActive: true, content: Image.asset("assets/images/appstore/today/today1.jpg",height: 150,width: 150,)),
-            Step(title: Text("Name"),content: Text(""),isActive: true,),
-            Step(title: Text("Phone"),content: Text(""),isActive: true,),
-            Step(title: Text("Email"),content: Text(""),isActive: true,),
+            Step(
+                isActive: true,
+                title: Text("Name"),
+                content: TextField(
+                  decoration: InputDecoration(
+                    border: UnderlineInputBorder(),
+                      prefixIcon: Icon(Icons.person_2),
+                      hintText: "Enter Full Name"),
+                )),
+            Step(
+              title: Text("Phone"),
+              content: TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.phone),
+                  hintText: "Enter Phone Number"),
+            ),isActive: true,),
+            Step(title: Text("Email"),content: TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.email_outlined),
+                  hintText: "Enter Proper Email Id"),
+            ),isActive: true,),
             Step(title: Text("DOB"),content: Text(""),isActive: true,),
             Step(title: Text("Gender"),content: Text(""),isActive: true,),
             Step(title: Text("Current Location"),content: Text(""),isActive: true,),
