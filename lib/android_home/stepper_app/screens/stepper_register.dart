@@ -2,8 +2,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/provider/stregisterprovider.dart';
 import 'package:provider/provider.dart';
+
+import '../provider/stregisterprovider.dart';
 
 class Stepper_Registration extends StatefulWidget {
   const Stepper_Registration({Key? key}) : super(key: key);

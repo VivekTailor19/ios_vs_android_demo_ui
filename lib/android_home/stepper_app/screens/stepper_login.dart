@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ios_vs_android_demo_ui/stepper_app/provider/stloginprovider.dart';
 import 'package:provider/provider.dart';
+
+import '../provider/stloginprovider.dart';
 
 class Stepper_Login extends StatefulWidget {
   const Stepper_Login({Key? key}) : super(key: key);
