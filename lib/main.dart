@@ -56,7 +56,7 @@ void main() {
           //initialRoute: "splashstepper",
           routes: {
               "/":(context) =>  Android_Home(),
-            "android_setting":(context) => Android_Settings(),
+              "android_setting":(context) => Android_Settings(),
               "googleplay":(context) => First_Screen(),
               "appview":(context) => App_View_Android(),
               "splashstepper":(context) => Splash_Stepper(),
@@ -83,6 +83,7 @@ void main() {
         ),
 
       ),
+
 
 
 
