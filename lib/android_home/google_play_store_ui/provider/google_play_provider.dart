@@ -44,7 +44,6 @@ class GooglePlayProvider extends ChangeNotifier {
     ApplicationModel(apprating: 4.1,appname: "Meet",appimage: "https://play-lh.googleusercontent.com/6wvcwcC_v4bBwA7K1eDoKw_PDtvdpHwhKAisZftnoY_Jn94Rjh7u7YSV0IEn9uZM2A=w240-h480-rw"),
     ApplicationModel(apprating: 4.0,appname: "Google Pay",appimage: "https://play-lh.googleusercontent.com/HArtbyi53u0jnqhnnxkQnMx9dHOERNcprZyKnInd2nrfM7Wd9ivMNTiz7IJP6-mSpwk=w240-h480-rw")
 
-
   ];
 
 
